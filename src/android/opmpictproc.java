@@ -8,7 +8,7 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
 
-public class opmpictprocess extends CordovaPlugin {
+public class opmpictproc extends CordovaPlugin {
 	public static final String ACTION_TEST01 = "test01";
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
