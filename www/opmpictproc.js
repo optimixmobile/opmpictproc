@@ -3,7 +3,7 @@ var pictprocess = {
 		cordova.exec(
 			successCallback, 	// success callback function
 			errorCallback, 		// error callback function
-			'opmpictprocess', 		// mapped Java class called "pictprocess"
+			'opmpictproc', 		// mapped Java class called "pictprocess"
 			'test01',   		// with this action name
 			[
 				{ // and this array of custom arguments to create our entry
