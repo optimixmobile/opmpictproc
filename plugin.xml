@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="org.optimix.opmpictproc"
+      version="1.0.0">
+    <name>OPMPictProc</name>
+    <description>OPM Picture Processing Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,cordova,picture</keywords>
+
+    <js-module src="www/opmpictproc.js" name="pictprocess">
+        <clobbers target="window.pictprocess" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="pictprocess">
+                <param name="android-package" value="org.optimix.opmpictproc.pictprocess"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/opmpictproc.java" 
+                     target-dir="src/org/optimix/opmpictproc" />      
+     </platform>          
+</plugin>
