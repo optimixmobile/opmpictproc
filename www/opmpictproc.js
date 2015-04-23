@@ -1,5 +1,6 @@
 var pictprocess = {
 	test01: function(parm1, parm2, parm3, parm4, parm5, successCallback, errorCallback) {
+		alert('ok1');
 		cordova.exec(
 			successCallback, 	// success callback function
 			errorCallback, 		// error callback function
@@ -15,6 +16,6 @@ var pictprocess = {
 				}
 			]
 		);
-		alert('ok');
+		alert('ok2');
 	}
 }
