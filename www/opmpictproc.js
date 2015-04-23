@@ -1,4 +1,4 @@
-var pictprocess = {
+var opmpictproc = {
 	test01: function(parm1, parm2, parm3, parm4, parm5, successCallback, errorCallback) {
 		alert('ok1');
 		cordova.exec(
