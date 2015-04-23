@@ -1,7 +1,9 @@
+var exec = require('cordova/exec');
+
 var opmpictproc = {
 	test01: function(parm1, parm2, parm3, parm4, parm5, successCallback, errorCallback) {
 		alert('ok1');
-		cordova.exec(
+		exec(
 			successCallback, 	// success callback function
 			errorCallback, 		// error callback function
 			'opmpictproc', 		// mapped Java class called "pictprocess"
