@@ -8,7 +8,7 @@
     <keywords>phonegap,cordova,picture</keywords>
 
     <js-module src="www/opmpictproc.js" name="opmpictproc">
-        <clobbers target="opmpictproc" />
+        <clobbers target="cordova.plugins.opmpictproc" />
     </js-module>
  
     <!-- android -->
