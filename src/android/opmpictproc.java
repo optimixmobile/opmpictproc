@@ -27,6 +27,8 @@ public class opmpictproc extends CordovaPlugin {
 		*/
 			JSONObject arg_object = args.getJSONObject(0);
 			// callbackContext.success(arg_object.getString("parm1"));
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			cordova.getActivity().startActivity(intent);
 			callbackContext.success("Test Bertrand");
 			return true;
 		} catch(Exception e) {
