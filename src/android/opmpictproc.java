@@ -13,6 +13,7 @@ public class opmpictproc extends CordovaPlugin {
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 	try {
+		/*
 			if (ACTION_TEST01.equals(action)) {
 				JSONObject arg_object = args.getJSONObject(0);
 				// arg_object.getString("parm1") ou arg_object.getLong("description")
@@ -23,6 +24,9 @@ public class opmpictproc extends CordovaPlugin {
 			}
 			callbackContext.error("Invalid action");
 			return false;
+		*/
+		callbackContext.success(arg_object.getString("parm1"));
+				return true;
 		} catch(Exception e) {
 			System.err.println("Exception: " + e.getMessage());
 			callbackContext.error(e.getMessage());
