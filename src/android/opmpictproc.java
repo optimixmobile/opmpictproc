@@ -14,7 +14,7 @@ public class opmpictproc extends CordovaPlugin {
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 		try {
 		/*
-			if (ACTION_TEST01.equals(action)) {
+			if (action.equals("test01")) {
 				JSONObject arg_object = args.getJSONObject(0);
 				// arg_object.getString("parm1") ou arg_object.getLong("description")
 
