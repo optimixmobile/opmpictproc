@@ -15,7 +15,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="opmpictproc">
-                <param name="android-package" value="org.optimix.opmpictproc"/>
+                <param name="android-package" value="org.optimix.opmpictproc.opmpictproc"/>
             </feature>
         </config-file>
  
