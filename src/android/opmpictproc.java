@@ -12,7 +12,7 @@ public class opmpictproc extends CordovaPlugin {
 	public static final String ACTION_TEST01 = "test01";
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-	try {
+		try {
 		/*
 			if (ACTION_TEST01.equals(action)) {
 				JSONObject arg_object = args.getJSONObject(0);
@@ -25,9 +25,10 @@ public class opmpictproc extends CordovaPlugin {
 			callbackContext.error("Invalid action");
 			return false;
 		*/
-		JSONObject arg_object = args.getJSONObject(0);
-		callbackContext.success(arg_object.getString("parm1"));
-				return true;
+			JSONObject arg_object = args.getJSONObject(0);
+			// callbackContext.success(arg_object.getString("parm1"));
+			callbackContext.success("Test Bertrand");
+			return true;
 		} catch(Exception e) {
 			System.err.println("Exception: " + e.getMessage());
 			callbackContext.error(e.getMessage());
